@@ -139,6 +139,32 @@ Nearby APs
    AP 70f0.968e.984f slot 1                    :  -86 dBm on ( 48, 20 MHz) (172.28.3.40)  
  
 
+```plaintext
+show wireless stats ap history
+```
+
+AP Name                          Radio MAC       Event      Time               Recent Disconnect Time   Disconnect Reason          Disconnect Count  
+\---------------------------------------------------------------------------------------------------------------------------------------------------  
+ap-0151-4-4800j                  0027.9048.9540  Joined     06/28/22 22:07:50  NA                       NA                         NA  
+ap-0151-4-4800j                  0027.9048.9540  Disjoined  06/28/22 22:07:19  NA                       DTLS close alert from peer 1   
+ap-0151-4-4800j                  0027.9048.9540  Joined     06/28/22 21:53:20  NA                       NA                         NA  
+ 
+
+```plaintext
+show ap tag summary
+```
+
+AP Name                           AP Mac           Site Tag Name                     Policy Tag Name                   RF Tag Name                       Misconfigured    Tag Source      
+\--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------      
+ap-0482-2-2238                    002a.1060.3bfe   U\_0482\_AP                         Optimized                         Optimized\_RF                      No               Filter          
+ap-0482-2-2141                    002a.1060.3c0c   U\_0482\_AP                         Optimized                         Optimized\_RF                      No               Filter          
+ap-0482-3-3315                    002a.1034.73cc   U\_0482\_AP                         Optimized                         Optimized\_RF                      No               Filter          
+ 
+
+c
+
+c
+
 c
 
 c
