@@ -99,4 +99,48 @@ ap-0482-2-2141                    00a2.ee15.7fc0     1         �
 ap-0482-3-3315                    00a2.ee17.3d00     1                        2        0    
  
 
-test
+```plaintext
+show ap cdp neighbors
+```
+
+AP Name                          AP IP                                     Neighbor Name                              Neighbor Port  
+\------------------------------------------------------------------------------------------------------------------------------------------  
+ap-0151-4-4800j                  172.31.35.219                             sx1-151ustar-4800b-ebc.net.utah.edu        GigabitEthernet9/29      
+
+Neighbor IP Count: 1  
+172.31.2.139                    
+
+ap-0038-1-167                    172.30.17.230                             sx1-038art-138t-lib.net.utah.edu           GigabitEthernet1/0/24    
+
+Neighbor IP Count: 1  
+172.30.17.6                    
+
+ap-0008-3-380                    172.30.0.113                              dx1-008aeb-210-lib.net.utah.edu            GigabitEthernet1/0/6      
+
+Neighbor IP Count: 1  
+172.30.0.68                       
+ 
+
+```plaintext
+show ap auto-rf dot11 dual-band
+```
+
+```plaintext
+show ap auto-rf dot11 24ghz
+```
+
+```plaintext
+show ap auto-rf dot11 5ghz
+```
+
+Nearby APs  
+   AP 286f.7f17.b92f slot 1                    :  -82 dBm on (100, 20 MHz) (172.28.3.40)  
+   AP 286f.7f18.822f slot 1                    :  -83 dBm on ( 36, 20 MHz) (172.28.3.40)  
+   AP 70f0.968e.984f slot 1                    :  -86 dBm on ( 48, 20 MHz) (172.28.3.40)  
+ 
+
+c
+
+c
+
+c
