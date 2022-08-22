@@ -136,7 +136,18 @@ show ap auto-rf dot11 5ghz
 Nearby APs  
    AP 286f.7f17.b92f slot 1                    :  -82 dBm on (100, 20 MHz) (172.28.3.40)  
    AP 286f.7f18.822f slot 1                    :  -83 dBm on ( 36, 20 MHz) (172.28.3.40)  
-   AP 70f0.968e.984f slot 1                    :  -86 dBm on ( 48, 20 MHz) (172.28.3.40)  
+   AP 70f0.968e.984f slot 1                    :  -86 dBm on ( 48, 20 MHz) (172.28.3.40)
+
+```plaintext
+sh ap auto-rf dot11 5ghz | i Channel changes due to radar|AP Name|Channel Change Count
+```
+
+AP Name                                           : ap-0037-2-232  
+   Channel Change Count                          : 0  
+AP Name                                           : ap-0037-2-232s  
+   Channel Change Count                          : 0  
+AP Name                                           : ap-0004-a-mech  
+   Channel Change Count                          : 0  
  
 
 ```plaintext
@@ -161,12 +172,74 @@ ap-0482-2-2141                    002a.1060.3c0c   U\_0482\_AP     
 ap-0482-3-3315                    002a.1034.73cc   U\_0482\_AP                         Optimized                         Optimized\_RF                      No               Filter          
  
 
-c
+```plaintext
+show version | i uptime|Installation mode|Cisco IOS Software
+```
 
-c
+Cisco IOS Software \[Bengaluru\], C9800 Software (C9800\_IOSXE-K9), Version 17.6.2, RELEASE SOFTWARE (fc7)  
+wlc-ha-5 uptime is 24 weeks, 2 days, 13 hours, 13 minutes  
+Installation mode is INSTALL  
+ 
 
-c
+```plaintext
+show redundancy | i ptime|Location|Current Software state|Switchovers
+```
 
-c
+ Available system uptime = 24 weeks, 2 days, 13 hours, 13 minutes  
+Switchovers system experienced = 3  
+              Active Location = slot 2  
+       Current Software state = ACTIVE  
+      Uptime in current state = 18 weeks, 3 days, 7 hours, 17 minutes  
+             Standby Location = slot 1  
+       Current Software state = STANDBY HOT   
+      Uptime in current state = 18 weeks, 3 days, 7 hours, 4 minutes  
+ 
 
-c
+```plaintext
+show wireless stats client detail
+```
+
+Total Number of Clients : 745
+
+Protocol Statistics
+
+\-----------------------------------------------------------------------------  
+Protcol            Client Count  
+802.11b              : 0  
+802.11g              : 1  
+802.11a              : 0  
+802.11n-2.4GHz       : 38  
+802.11n-5 GHz        : 85  
+802.11ac             : 542  
+802.11ax-5 GHz       : 81  
+802.11ax-2.4 GHz     : 0  
+ 802.11ax-6 GHz      : 0
+
+Current client state statistics:  
+\-----------------------------------------------------------------------------  
+ Authenticating         : 15  
+ Mobility               : 0  
+ IP Learn               : 8  
+ Webauth Pending        : 40  
+ Run                    : 684  
+ Delete-in-Progress     : 0
+
+  
+Client Summary  
+\-----------------------------  
+Current Clients : 745  
+Excluded Clients: 6  
+Disabled Clients: 4  
+Foreign Clients : 0  
+Anchor Clients  : 0  
+Local Clients   : 732  
+Idle Clients    : 0  
+ 
+
+```plaintext
+show radius statistics
+```
+
+ Access Rejects           :      63739  
+Access Accepts           :    3030216  
+Average response delay(ms):          6         12          6
