@@ -68,17 +68,15 @@ config 802.11b channel ap $AP_NAME $CHANNEL
 config 802.11b enable $AP_NAME</code></pre></td><td><pre><code class="language-plaintext">ap name $AP_NAME dot11 24ghz shutdown
 ap name $AP_NAME dot11 24ghz txpower $TXLEVEL
 ap name $AP_NAME dot11 24ghz channel $CHANNEL
-ap name $AP_NAME no dot11 24ghz shutdown  </code></pre></td></tr><tr><td>Set 5 macro radio power and channel</td><td>Slot 1</td><td>9130</td><td><pre><code class="language-plaintext">config 802.11a disable $AP_NAME
-config 802.11a role $AP_NAME manual client-serving
-config 802.11a txpower $AP_NAME $TXLEVEL
-config 802.11a channel ap $AP_NAME $CHANNEL
-config 802.11a enable $AP_NAME&nbsp;</code></pre></td><td><pre><code class="language-plaintext">ap name $AP_NAME dot11 5ghz shutdown
+ap name $AP_NAME no dot11 24ghz shutdown  </code></pre></td></tr><tr><td>Set 5 macro radio power and channel</td><td>Slot 1</td><td>9130</td><td><pre><code class="language-plaintext">config slot 1 disable $AP_NAME
+config slot 1 role $AP_NAME manual client-serving
+config slot 1 txpower $AP_NAME $TXLEVEL
+config slot 1 channel ap $AP_NAME $CHANNEL
+config slot 1 enable $AP_NAME</code></pre></td><td><pre><code class="language-plaintext">ap name $AP_NAME dot11 5ghz shutdown
 ap name $AP_NAME dot11 5ghz role manual client-serving
 ap name $AP_NAME dot11 5ghz txpower $TXLEVEL
 ap name $AP_NAME dot11 5ghz channel $CHANNEL
-ap name $AP_NAME no dot11 5ghz shutdown</code></pre></td></tr><tr><td>Set 5 micro radio to monitor mode</td><td>Slot 2</td><td>9130</td><td><pre><code class="language-plaintext">config slot 2 disable $AP_NAME
-config slot 2 role $AP_NAME manual monitor
-config slot 2 enable $AP_NAME</code></pre></td><td><pre><code class="language-plaintext">ap name $AP_NAME dot 11 5ghz slot 2 shutdown
+ap name $AP_NAME no dot11 5ghz shutdown</code></pre></td></tr><tr><td>Set 5 micro radio to monitor mode</td><td>Slot 2</td><td>9130</td><td><pre><code class="language-plaintext">config slot 2 role $AP_NAME manual monitor</code></pre></td><td><pre><code class="language-plaintext">ap name $AP_NAME dot 11 5ghz slot 2 shutdown
 ap name $AP_NAME dot11 5ghz slot 2 radio role manual monitor
 </code></pre></td></tr><tr><td>Disable 2.4 radio</td><td>Slot 0</td><td>9105</td><td><pre><code class="language-plaintext">config 802.11b disable $AP_NAME</code></pre></td><td><pre><code class="language-plaintext">ap name $AP_NAME dot11 24ghz shutdown</code></pre></td></tr><tr><td>Set 2.4 radio power and channel</td><td>slot 0</td><td>9105</td><td><pre><code class="language-plaintext">config 802.11b disable $AP_NAME
 config 802.11b txpower ap $AP_NAME $TXLEVEL
