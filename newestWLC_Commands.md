@@ -70,7 +70,7 @@ ap name $AP_NAME dot11 24ghz txpower $TXLEVEL
 ap name $AP_NAME dot11 24ghz channel $CHANNEL
 ap name $AP_NAME no dot11 24ghz shutdown  </code></pre></td></tr><tr><td>Set 5 macro radio power and channel</td><td>Slot 1</td><td>9130</td><td><pre><code class="language-plaintext">config slot 1 disable $AP_NAME
 config slot 1 role $AP_NAME manual client-serving
-config slot 1 txpower $AP_NAME $TXLEVEL
+config slot 1 txpower ap $AP_NAME $TXLEVEL
 config slot 1 channel ap $AP_NAME $CHANNEL
 config slot 1 enable $AP_NAME</code></pre></td><td><pre><code class="language-plaintext">ap name $AP_NAME dot11 5ghz shutdown
 ap name $AP_NAME dot11 5ghz role manual client-serving
