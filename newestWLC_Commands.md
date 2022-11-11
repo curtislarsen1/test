@@ -53,7 +53,7 @@ ap name $AP_NAME dot11 dual-band role manual client-serving
 ap name $AP_NAME dot11 dual-band txpower $TXLEVEL
 ap name $AP_NAME dot11 dual-band channel $CHANNEL
 ap name $AP_NAME no dot11 dual-band shutdown</code></pre></td></tr><tr><td>Set 5 radio power and channel</td><td>Slot 1</td><td>9120</td><td><pre><code class="language-plaintext">config 802.11a disable $AP_NAME
-config 802.11a txpower $AP_NAME 3
+config 802.11a txpower ap $AP_NAME 3
 config 802.11a channel ap $AP_NAME 48
 config 802.11a enable $AP_NAME</code></pre></td><td><pre><code class="language-plaintext">ap name $AP_NAME dot11 5ghz shutdown
 ap name $AP_NAME dot11 5ghz txpower $TXLEVEL
