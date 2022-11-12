@@ -63,6 +63,7 @@ config 802.11b role $AP_NAME manual monitor
 config 802.11b enable $AP_NAME</code></pre></td><td><pre><code class="language-plaintext">ap name $AP_NAME dot11 24ghz shutdown
 ap name $AP_NAME dot11 24ghz role manual monitor
 ap name $AP_NAME no dot11 24ghz shutdown</code></pre></td></tr><tr><td>Set 2.4 radio power and channel</td><td>Slot 0</td><td>9130</td><td><pre><code class="language-plaintext">config 802.11b disable $AP_NAME
+config 802.11b role $AP_NAME manual client-serving
 config 802.11b txpower ap $AP_NAME $TXLEVEL
 config 802.11b channel ap $AP_NAME $CHANNEL
 config 802.11b enable $AP_NAME</code></pre></td><td><pre><code class="language-plaintext">ap name $AP_NAME dot11 24ghz shutdown
